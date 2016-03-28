@@ -1,2 +1,2 @@
 # DaiTQ-iOS3-Assignment<br>
-Test
+Assignment 1: Chess And Alert
