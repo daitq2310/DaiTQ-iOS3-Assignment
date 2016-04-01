@@ -1,2 +1,3 @@
 # DaiTQ-iOS3-Assignment<br>
-Assignment 1: Chess And Alert
+1. Assignment 1: Chess And Alert <br>
+2. Assignment 2: AlertView, TableView
