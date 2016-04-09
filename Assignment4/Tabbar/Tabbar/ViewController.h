@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITabBarControllerDelegate>
 @property UIViewController *viewController1;
 @property UIViewController *viewController2;
 @property UITabBarController *tabBarController;
