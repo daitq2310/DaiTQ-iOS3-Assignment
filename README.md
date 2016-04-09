@@ -1,5 +1,5 @@
 # DaiTQ-iOS3-Assignment<br>
-1. Assignment 1: Chess And Alert <br>
-2. Assignment 2: AlertView, TableView <br>
+1. Assignment 1: Chess And Alert
+2. Assignment 2: AlertView, TableView
 3. Assignment 3: UITableView, UIAlertView, UIPickerView, UIActionSheet, Segment, Switch, CustomTableCell
-4. Assignment 4:
+4. Assignment 4: CustomTableCell (xib), Navigation, Tabbar...
