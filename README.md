@@ -3,3 +3,4 @@
 2. Assignment 2: AlertView, TableView
 3. Assignment 3: UITableView, UIAlertView, UIPickerView, UIActionSheet, Segment, Switch, CustomTableCell
 4. Assignment 4: CustomTableCell (xib), Navigation, Tabbar...
+5. Assignment 5: Message Box, Custom Class, Custom Button, Custom Slider, Custom ImageView
