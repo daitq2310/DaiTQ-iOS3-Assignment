@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		321B28991CB14C7D006CDE44 /* white_queen.png in Resources */ = {isa = PBXBuildFile; fileRef = 321B28931CB14C7D006CDE44 /* white_queen.png */; };
-		321B289D1CB15253006CDE44 /* ChessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 321B289C1CB15253006CDE44 /* ChessCell.m */; };
+		324AFA021CC116C7002F1C42 /* ChessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 324AFA011CC116C7002F1C42 /* ChessCell.m */; };
+		324AFA051CC116D6002F1C42 /* Pieces.m in Sources */ = {isa = PBXBuildFile; fileRef = 324AFA041CC116D6002F1C42 /* Pieces.m */; };
 		32E5148B1CAFDA720065A083 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E5148A1CAFDA720065A083 /* main.m */; };
 		32E5148E1CAFDA720065A083 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E5148D1CAFDA720065A083 /* AppDelegate.m */; };
 		32E514911CAFDA720065A083 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E514901CAFDA720065A083 /* ViewController.m */; };
 		32E514941CAFDA720065A083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E514921CAFDA720065A083 /* Main.storyboard */; };
 		32E514961CAFDA720065A083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E514951CAFDA720065A083 /* Assets.xcassets */; };
 		32E514991CAFDA720065A083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E514971CAFDA720065A083 /* LaunchScreen.storyboard */; };
-		32E514A31CAFDAAC0065A083 /* Pieces.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E514A21CAFDAAC0065A083 /* Pieces.m */; };
-		32E514A91CAFDB250065A083 /* Queen.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E514A81CAFDB250065A083 /* Queen.m */; };
-		32E514BD1CAFDCF80065A083 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E514BC1CAFDCF80065A083 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		321B28931CB14C7D006CDE44 /* white_queen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_queen.png; sourceTree = "<group>"; };
-		321B289B1CB15253006CDE44 /* ChessCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessCell.h; sourceTree = "<group>"; };
-		321B289C1CB15253006CDE44 /* ChessCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessCell.m; sourceTree = "<group>"; };
+		324AFA001CC116C7002F1C42 /* ChessCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessCell.h; sourceTree = "<group>"; };
+		324AFA011CC116C7002F1C42 /* ChessCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessCell.m; sourceTree = "<group>"; };
+		324AFA031CC116D6002F1C42 /* Pieces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pieces.h; sourceTree = "<group>"; };
+		324AFA041CC116D6002F1C42 /* Pieces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pieces.m; sourceTree = "<group>"; };
 		32E514861CAFDA720065A083 /* Ex1Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ex1Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E5148A1CAFDA720065A083 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32E5148C1CAFDA720065A083 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,12 +34,6 @@
 		32E514951CAFDA720065A083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32E514981CAFDA720065A083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32E5149A1CAFDA720065A083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32E514A11CAFDAAC0065A083 /* Pieces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pieces.h; sourceTree = "<group>"; };
-		32E514A21CAFDAAC0065A083 /* Pieces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pieces.m; sourceTree = "<group>"; };
-		32E514A71CAFDB250065A083 /* Queen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queen.h; sourceTree = "<group>"; };
-		32E514A81CAFDB250065A083 /* Queen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queen.m; sourceTree = "<group>"; };
-		32E514BB1CAFDCF80065A083 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		32E514BC1CAFDCF80065A083 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,15 +47,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3217E75B1CB1000E003DBCD3 /* ChessBoard */ = {
-			isa = PBXGroup;
-			children = (
-				321B289B1CB15253006CDE44 /* ChessCell.h */,
-				321B289C1CB15253006CDE44 /* ChessCell.m */,
-			);
-			name = ChessBoard;
-			sourceTree = "<group>";
-		};
 		32E5147D1CAFDA720065A083 = {
 			isa = PBXGroup;
 			children = (
@@ -82,9 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				321B28931CB14C7D006CDE44 /* white_queen.png */,
-				3217E75B1CB1000E003DBCD3 /* ChessBoard */,
-				32E514BA1CAFDCE90065A083 /* Player */,
-				32E514A01CAFDA850065A083 /* Pieces */,
 				32E5148C1CAFDA720065A083 /* AppDelegate.h */,
 				32E5148D1CAFDA720065A083 /* AppDelegate.m */,
 				32E5148F1CAFDA720065A083 /* ViewController.h */,
@@ -94,6 +76,10 @@
 				32E514971CAFDA720065A083 /* LaunchScreen.storyboard */,
 				32E5149A1CAFDA720065A083 /* Info.plist */,
 				32E514891CAFDA720065A083 /* Supporting Files */,
+				324AFA001CC116C7002F1C42 /* ChessCell.h */,
+				324AFA011CC116C7002F1C42 /* ChessCell.m */,
+				324AFA031CC116D6002F1C42 /* Pieces.h */,
+				324AFA041CC116D6002F1C42 /* Pieces.m */,
 			);
 			path = Ex1Chess;
 			sourceTree = "<group>";
@@ -104,26 +90,6 @@
 				32E5148A1CAFDA720065A083 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		32E514A01CAFDA850065A083 /* Pieces */ = {
-			isa = PBXGroup;
-			children = (
-				32E514A11CAFDAAC0065A083 /* Pieces.h */,
-				32E514A21CAFDAAC0065A083 /* Pieces.m */,
-				32E514A71CAFDB250065A083 /* Queen.h */,
-				32E514A81CAFDB250065A083 /* Queen.m */,
-			);
-			name = Pieces;
-			sourceTree = "<group>";
-		};
-		32E514BA1CAFDCE90065A083 /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				32E514BB1CAFDCF80065A083 /* Player.h */,
-				32E514BC1CAFDCF80065A083 /* Player.m */,
-			);
-			name = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,11 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32E514A91CAFDB250065A083 /* Queen.m in Sources */,
-				32E514BD1CAFDCF80065A083 /* Player.m in Sources */,
-				321B289D1CB15253006CDE44 /* ChessCell.m in Sources */,
-				32E514A31CAFDAAC0065A083 /* Pieces.m in Sources */,
+				324AFA021CC116C7002F1C42 /* ChessCell.m in Sources */,
 				32E514911CAFDA720065A083 /* ViewController.m in Sources */,
+				324AFA051CC116D6002F1C42 /* Pieces.m in Sources */,
 				32E5148E1CAFDA720065A083 /* AppDelegate.m in Sources */,
 				32E5148B1CAFDA720065A083 /* main.m in Sources */,
 			);

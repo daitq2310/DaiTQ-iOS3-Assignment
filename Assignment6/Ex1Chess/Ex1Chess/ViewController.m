@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "ChessCell.h"
-#import "Queen.h"
+#import "Pieces.h"
 
 @interface ViewController ()
 
@@ -21,10 +21,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     for (UIView *view in self.viewChess.subviews){
         if ([view isKindOfClass:[ChessCell class]]){
-            [((ChessCell *) view) addTarget:self action:@selector(btnPiecesClicked:) forControlEvents:UIControlEventTouchUpInside];
+            [((ChessCell *) view) addTarget:self action:@selector(btnCellClicked:) forControlEvents:UIControlEventTouchUpInside];
         }
-         else if ([view isKindOfClass:[Queen class]]){
-            [((Queen *) view) addTarget:self action:@selector(btnPiecesClicked:) forControlEvents:UIControlEventTouchUpInside];
+        if ([view isKindOfClass:[Pieces class]]){
+            [((Pieces *) view) addTarget:self action:@selector(btnCellClicked:) forControlEvents:UIControlEventTouchUpInside];
         }
     }
 }
@@ -34,18 +34,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)btnChessCellClicked:(UIButton *)sender {
-    
-}
-
-- (IBAction)btnPiecesClicked:(UIButton *)sender {
+- (IBAction)btnCellClicked:(UIButton *)sender {
     sender.layer.borderColor = [UIColor redColor].CGColor;
-    sender.layer.borderWidth = 2.0f;
-    [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-        self.btnPieces.center = sender.center;
+    sender.layer.borderWidth = 2.0;
+    [UIView animateWithDuration:1.0 delay:0.2 options:UIViewAnimationOptionCurveLinear animations:^{
+        self.btnQueen.center = sender.center;
     } completion:^(BOOL finished) {
         sender.layer.borderColor = [UIColor clearColor].CGColor;
+        sender.layer.borderWidth = 0.0;
     }];
 }
-
 @end

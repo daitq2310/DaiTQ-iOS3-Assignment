@@ -9,12 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController :  UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *btnCell;
+- (IBAction)btnCellClicked:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnQueen;
 @property (weak, nonatomic) IBOutlet UIView *viewChess;
-@property (weak, nonatomic) IBOutlet UIButton *btnChessCell;
-- (IBAction)btnChessCellClicked:(UIButton *)sender;
-@property (weak, nonatomic) IBOutlet UIButton *btnPieces;
-- (IBAction)btnPiecesClicked:(UIButton *)sender;
-
-
 
 @end
