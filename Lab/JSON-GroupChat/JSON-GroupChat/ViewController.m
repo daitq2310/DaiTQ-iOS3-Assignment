@@ -1,0 +1,80 @@
+//
+//  ViewController.m
+//  JSON-GroupChat
+//
+//  Created by Quang Dai on 4/10/16.
+//  Copyright © 2016 Quang Dai. All rights reserved.
+//
+
+#import "ViewController.h"
+#import "IdCell.h"
+#import "DetailChatViewController.h"
+
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    NSError *jsonError;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"json" ofType:@"txt"];
+    
+    NSString* content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&jsonError];
+    
+    NSData *objectData = [content dataUsingEncoding:NSUTF8StringEncoding];
+    self.jsonArray = [NSJSONSerialization JSONObjectWithData:objectData options:NSJSONReadingMutableContainers error:&jsonError];
+//    NSLog(@"%@", self.jsonArray);
+//    NSLog(@"%d",self.jsonArray.count);
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.jsonArray count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    IdCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.jpg"]];
+    tempImageView.contentMode = UIViewContentModeScaleAspectFill;
+    [tempImageView setFrame:_tblGroupChat.frame];
+    _tblGroupChat.backgroundView = tempImageView;
+    
+    UILabel *lblHello = [cell.contentView viewWithTag:101];
+    NSDictionary *dictData = [self.jsonArray objectAtIndex:indexPath.row];
+    lblHello.text = dictData[@"id"];
+//    if (indexPath.row % 2 == 0){
+//        cell.backgroundColor = [UIColor brownColor];
+//    } else {
+//        cell.backgroundColor = [UIColor cyanColor];
+//    }
+    cell.backgroundColor = [UIColor clearColor];
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    [UIView animateWithDuration:1.5 delay:0.0 usingSpringWithDamping:0.5 initialSpringVelocity:0.1 * indexPath.row options:UIViewAnimationOptionCurveLinear animations:^{
+        cell.center = self.view.center;
+    } completion:^(BOOL finished) {
+        
+    }];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSDictionary *jsonDictionary = [self.jsonArray objectAtIndex:indexPath.row];
+    DetailChatViewController *detailChatVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"DetailChat"];
+    [self.navigationController pushViewController:detailChatVC animated:YES];
+    NSDictionary *dictData = [self.jsonArray objectAtIndex:indexPath.row];
+    detailChatVC.dictData = dictData;
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end
