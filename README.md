@@ -6,3 +6,4 @@
 5. Assignment 5: Message Box, Custom Class, Custom Button, Custom Slider, Custom ImageView
 6. Assignment 6: Animation
 7. Assignment 7: Moving ImageView, Dectect Orientation and Shake motion event, Remote Control
+8. Assignment 8: UIGestureRecognizer
