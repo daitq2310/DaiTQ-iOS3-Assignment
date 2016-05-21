@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock.png" translatesAutoresizingMaskIntoConstraints="NO" id="e0d-qk-jTn">
+                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e0d-qk-jTn" secondAttribute="height" multiplier="1:1" id="39y-u8-ez2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="second.png" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-ib-vFw">
+                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minute.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rug-fp-ZdP">
+                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hour.png" translatesAutoresizingMaskIntoConstraints="NO" id="TO7-rS-xib">
+                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center.png" translatesAutoresizingMaskIntoConstraints="NO" id="zrj-EN-cSs">
+                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e0d-qk-jTn" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" multiplier="5" priority="750" id="3fq-6c-6Bw"/>
+                            <constraint firstItem="Rug-fp-ZdP" firstAttribute="width" secondItem="e0d-qk-jTn" secondAttribute="width" id="7ZG-lx-Ul8"/>
+                            <constraint firstItem="zrj-EN-cSs" firstAttribute="height" secondItem="e0d-qk-jTn" secondAttribute="height" id="9n9-kD-Lxq"/>
+                            <constraint firstItem="e0d-qk-jTn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I13-W3-BOg"/>
+                            <constraint firstItem="e0d-qk-jTn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" multiplier="5" id="IHf-3n-dCk"/>
+                            <constraint firstItem="zrj-EN-cSs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ilm-E5-hYM"/>
+                            <constraint firstItem="TO7-rS-xib" firstAttribute="width" secondItem="e0d-qk-jTn" secondAttribute="width" id="QIo-Ga-5FK"/>
+                            <constraint firstItem="TO7-rS-xib" firstAttribute="height" secondItem="e0d-qk-jTn" secondAttribute="height" id="SQg-Rp-4pG"/>
+                            <constraint firstItem="zrj-EN-cSs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TPM-af-ZRb"/>
+                            <constraint firstItem="rX3-ib-vFw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tdg-73-PKE"/>
+                            <constraint firstItem="Rug-fp-ZdP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uht-ns-Do7"/>
+                            <constraint firstItem="e0d-qk-jTn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yuw-fO-wpf"/>
+                            <constraint firstItem="rX3-ib-vFw" firstAttribute="height" secondItem="e0d-qk-jTn" secondAttribute="height" id="Z61-DC-f4M"/>
+                            <constraint firstItem="Rug-fp-ZdP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="apE-Xw-0sG"/>
+                            <constraint firstItem="rX3-ib-vFw" firstAttribute="width" secondItem="e0d-qk-jTn" secondAttribute="width" id="bVH-wa-Fyd"/>
+                            <constraint firstItem="TO7-rS-xib" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFO-Vj-c2Q"/>
+                            <constraint firstItem="TO7-rS-xib" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mr5-wa-teo"/>
+                            <constraint firstItem="rX3-ib-vFw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nSY-OL-Pd2"/>
+                            <constraint firstItem="Rug-fp-ZdP" firstAttribute="height" secondItem="e0d-qk-jTn" secondAttribute="height" id="pSZ-kR-fjS"/>
+                            <constraint firstItem="zrj-EN-cSs" firstAttribute="width" secondItem="e0d-qk-jTn" secondAttribute="width" id="unX-40-L3W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imvCenter" destination="zrj-EN-cSs" id="J0n-wD-xZt"/>
+                        <outlet property="imvClock" destination="e0d-qk-jTn" id="jVn-Zp-dYX"/>
+                        <outlet property="imvHour" destination="TO7-rS-xib" id="bEi-Id-xHH"/>
+                        <outlet property="imvMinute" destination="Rug-fp-ZdP" id="Zav-C9-w9y"/>
+                        <outlet property="imvSecond" destination="rX3-ib-vFw" id="fZC-U4-cxv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="center.png" width="894" height="894"/>
+        <image name="clock.png" width="894" height="894"/>
+        <image name="hour.png" width="894" height="894"/>
+        <image name="minute.png" width="894" height="894"/>
+        <image name="second.png" width="894" height="894"/>
+    </resources>
+</document>
