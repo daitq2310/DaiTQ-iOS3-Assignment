@@ -62,8 +62,11 @@
 //    });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         while (true){
+            NSLog(@"22222222");
             [NSThread sleepForTimeInterval:1.0f];
+            NSLog(@"11111111");
             [self animationSecond];
+            NSLog(@"33333333");
         }
     });
     

@@ -21,31 +21,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock.png" translatesAutoresizingMaskIntoConstraints="NO" id="e0d-qk-jTn">
-                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                                <rect key="frame" x="60" y="60" width="480" height="480"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="e0d-qk-jTn" secondAttribute="height" multiplier="1:1" id="39y-u8-ez2"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="second.png" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-ib-vFw">
-                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                                <rect key="frame" x="60" y="60" width="480" height="480"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minute.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rug-fp-ZdP">
-                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                                <rect key="frame" x="60" y="60" width="480" height="480"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hour.png" translatesAutoresizingMaskIntoConstraints="NO" id="TO7-rS-xib">
-                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                                <rect key="frame" x="60" y="60" width="480" height="480"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center.png" translatesAutoresizingMaskIntoConstraints="NO" id="zrj-EN-cSs">
-                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                                <rect key="frame" x="60" y="60" width="480" height="480"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="e0d-qk-jTn" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" multiplier="5" priority="750" id="3fq-6c-6Bw"/>
+                            <constraint firstItem="e0d-qk-jTn" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" multiplier="3" priority="750" id="3fq-6c-6Bw"/>
                             <constraint firstItem="Rug-fp-ZdP" firstAttribute="width" secondItem="e0d-qk-jTn" secondAttribute="width" id="7ZG-lx-Ul8"/>
                             <constraint firstItem="zrj-EN-cSs" firstAttribute="height" secondItem="e0d-qk-jTn" secondAttribute="height" id="9n9-kD-Lxq"/>
                             <constraint firstItem="e0d-qk-jTn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I13-W3-BOg"/>
-                            <constraint firstItem="e0d-qk-jTn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" multiplier="5" id="IHf-3n-dCk"/>
+                            <constraint firstItem="e0d-qk-jTn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" multiplier="3" id="IHf-3n-dCk"/>
                             <constraint firstItem="zrj-EN-cSs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ilm-E5-hYM"/>
                             <constraint firstItem="TO7-rS-xib" firstAttribute="width" secondItem="e0d-qk-jTn" secondAttribute="width" id="QIo-Ga-5FK"/>
                             <constraint firstItem="TO7-rS-xib" firstAttribute="height" secondItem="e0d-qk-jTn" secondAttribute="height" id="SQg-Rp-4pG"/>
